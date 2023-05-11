@@ -52,11 +52,8 @@ e <- matrix(0, ncol = 1)
 # -- fit the model to HIV outcomes-- #
 #######################################
 
-source("TestPM20Model/inla_models.R")
-if(no_wealth){
-  source("TestPM20Model/inla_models_no_wealth.R")
-}
-source("TestPM20Model/fit_inla_models.R")
+source("inla_models.R")
+source("fit_inla_models.R")
 
 #####################################
 # --- look at model performance --- #
